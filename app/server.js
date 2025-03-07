@@ -1226,8 +1226,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-sendEmail(tournament_created, "Fuck You", ["emresunar1201@gmail.com"]);
-
 // ✅ Start Server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
