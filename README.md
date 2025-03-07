@@ -33,7 +33,7 @@ appealing experience across all devices.
 -
 - Glitch - We deployed to Glitch to make it readily accessible to anyone with the url
 - Tailwind CSS - We used Tailwind CSS to streamline the appearance of our application making it look more professional
-- MongoDB - We used MongoDB to store complex datastructures like the user and tournament information allowing for access control based on the user's role
+- MongoDB (Mongoose) - We used MongoDB to store complex datastructures like the user and tournament information allowing for access control based on the user's role
 - Google OAuth - We used Google authentication as we deemed most people would have a Google account and it allowed for access control on our application
 - Jira - We used Jira to manage our sprint and organize our team throughout the development of this application
 - GitHub - We used GitHub to manage version control throughout development and manage merge conflicts
@@ -81,14 +81,27 @@ appealing experience across all devices.
 - Bug Fixes
 
 **Emre Sunar:**
+- Drafted First iteration of website 
+  - Created Logo, as well as header, footer, and nav bar
+  - Added a parallax image to the front home page under the tournaments for visual effect
+  - Created styling for entire website with texture overlay and color palette, with custom animations for certain functionalities
 - Tournament Bracket
-  - Created schema
+  - Created dynamically generating schema with series of arrays which define rounds in a tournament
   - Created styling
   - Bracket generation
   - Limiting access to bracket management
+  - Implemented a select winner function to update match scores in real time
 - Tournament Creation
   - Updating the database
   - Schema
+- Created MongoDB server and implemented code for communications
+- Past Tournaments feature to track history of completed tournaments
+- Registered Players feature to track players who have participating in past and ongoing tournaments
+- 404 Page Minigame (Cue Ball Chase)
+- Bracket Access control for different types of users
+- Created draft of README
+- Deployed onto Glitch and handled bugs with node.js and vite build
+  - Fixed nodemailer bug with emails for tournament creation and starting
 - Bug Fixes
 
 **Danial Zhang:**
