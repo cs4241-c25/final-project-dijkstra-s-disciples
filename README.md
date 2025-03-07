@@ -37,7 +37,7 @@ appealing experience across all devices.
 - Google OAuth - We used Google authentication as we deemed most people would have a Google account and it allowed for access control on our application
 - Jira - We used Jira to manage our sprint and organize our team throughout the development of this application
 - GitHub - We used GitHub to manage version control throughout development and manage merge conflicts
-- Nodemailer + smtp - We used Nodemailer to send notifications to users when tournaments are created and started
+- Nodemailer - We used Nodemailer to send notifications to users when tournaments are created and started
 - Concurrently - We used concurrently to run the frontend and backend simultaneously
 - React-dom-router - we used routes to easy navigate between tabs with minimal load times
 
