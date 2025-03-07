@@ -81,7 +81,7 @@ appealing experience across all devices.
 - Bug Fixes
 
 **Emre Sunar:**
-- Drafted First iteration of website 
+- Drafted First Iteration of Website 
   - Created Logo, as well as header, footer, and nav bar
   - Added a parallax image to the front home page under the tournaments for visual effect
   - Created styling for entire website with texture overlay and color palette, with custom animations for certain functionalities
@@ -94,17 +94,21 @@ appealing experience across all devices.
 - Tournament Creation
   - Updating the database
   - Schema
-- Created MongoDB server and implemented code for communications
-- Past Tournaments feature to track history of completed tournaments
-- Registered Players feature to track players who have participating in past and ongoing tournaments
+- Created MongoDB Server
+  - Implemented code for communications
+- Past Tournaments Feature
+  - Track history of Completed Tournaments
+- Registered Players Feature
+  - Track players who have participating in past and ongoing tournaments
 - 404 Page Minigame (Cue Ball Chase)
-- Bracket Access control for different types of users
+- Bracket Access Control for Different Types of Users
 - Created draft of README
-- Deployed onto Glitch and handled bugs with node.js and vite build
+- Deployed onto Glitch
+  - Handled bugs with node.js and vite build
   - Fixed nodemailer bug with emails for tournament creation and starting
 - Bug Fixes
 
-**Danial Zhang:**
+**Daniel Zhang:**
 - Authentication through Google
   - Automatically registering new people into the database as players
   - Creating method to retrieve user information
