@@ -38,6 +38,8 @@ appealing experience across all devices.
 - Jira - We used Jira to manage our sprint and organize our team throughout the development of this application
 - GitHub - We used GitHub to manage version control throughout development and manage merge conflicts
 - Nodemailer + smtp - We used Nodemailer to send notifications to users when tournaments are created and started
+- Concurrently - We used concurrently to run the frontend and backend simultaneously
+- React-dom-router - we used routes to easy navigate between tabs with minimal load times
 
 **Challenges**
 -
@@ -45,6 +47,8 @@ appealing experience across all devices.
 - Email Notifications: Email notification system to message people when tournaments are created or started
 - Bracket Creation: Dynamic Bracket Generation for any amount of players between 4 and 32.
 - Authentication: Setting up Google OAuth to allow for verification through Google
+- Access Control: Allowing viewers, players, tournament officials, and tournament officials officiating a given tournament to have different levels of access
+- Charts & Player Statistics: Displaying compehensive charts and graphs that model players success over all the tournaments they participate in
 
 **Contributions**
 -
@@ -71,6 +75,7 @@ appealing experience across all devices.
   - Players able to Register
   - Viewers only able to view participants
 - Managing player and tournament official access
+  - Registration and officiation (including barring tournament officials from participating in tournaments they are officiating)
 - Updated meta data
 - QA Testing
 - Bug Fixes
@@ -98,5 +103,6 @@ appealing experience across all devices.
   - Updating and Displaying player match history
 - Settings
   - Allowing users to enable/disable emails
+- Limiting access to routes like tournament creation for non-tournament officials
 - **Bug Fixes**
   - Created Dev Tool for debugging and testing (now deleted)
