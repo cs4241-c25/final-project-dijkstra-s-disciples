@@ -1,46 +1,102 @@
-# Final Project
-*Due at noon on the day of your team's assigned class presentation. Teams will be presenting
-during the last week of class on Tuesday, Thursday, and Friday (March 4, 6, 7)*
+**[Link to CueSportsPro](https://cuesportspro.glitch.me/)**   
+**[Link to Video](https://youtu.be/M91rP8Emqtc)**
 
-For your final project, you'll implement a web application that exhibits understanding of the course materials.
-This project should provide an opportunity to both be creative and to pursue individual research and learning goals.
+Made by the Dijkstra's Disciples - Chris Smith, Daniel Zhang, Devin Mihaichuk, and Emre Sunar
 
-## Final Project Description
-- Your project should consist of a complete Web application, exhibiting facets of the three main sections of the course material:
-- Static web page content and design. You should have a project with a well-designed user interface that is responsive, accessible, easily navigable, and features significant content.
-- Dynamic behavior implemented with JavaScript or Typescript.
-- Server-side programming using Node.js – either JavaScript or Typescript. Typically, this will take the form of some sort of persistent data (database), authentication, and possibly server-side computation.
-- A video (less than five minutes) where each group member explains some aspect of the project. An easy way to produce this video is for you all the group members to join a Zoom call that is recorded; each member can share their screen when they discuss the project or one member can "drive" the interface while other members narrate (this second option will probably work better.) The video should be posted on YouTube or some other accessible video hosting service. Make sure your video is less than five minutes, but long enough to successfully explain your project and show it in action. There is no minimum video length.
+---
+**Description**
+-
 
-## Project ideation
-I encourage you to identify projects that will have impact, either artistically or in terms of productivity. A few possibilities are
-1.	AI/ML app. You may take an AI/ML that you have written in the past and create a full application out of it provided it satisfies all the project requirements. I will review the proposals to make sure the scope is significant enough for a final project.
-2.	Mass General Brigham – The hospital is interested in providing visitors with directions to parking lots, building entrances, and information desks for multiple buildings. Integrated with the Google Maps API, these directions would guide visitors from their homes to the information desks of hospital buildings, and would guide visitors to locations between hospital buildings. Contact me if you would like more information.
-3.	Boston Freedom Trail app for tourists.
-4.	A generalized sightseeing app that permits tourist organizations to enter information in creating their own city walking tours.
-5.	An application aimed at serving the WPI student body. For example, an app that would facilitate the formation and coordination of informal WPI student groups.
-6.	An idea of your own!
+   CueSportsPro is a sophisticated tournament management system with role-based access control for players and 
+tournament officials. The platform enables tournament officials to create customizable tournaments 
+with different rule sets (8-Ball, 9-Ball, or 10-Ball), scoring configurations, and skill-level brackets. Players 
+can register for upcoming tournaments, view past tournaments, view ongoing bracket, and track their performance history. When 
+tournaments are in session, the system provides real-time bracket visualization with automatic progression 
+as officials record match results, creating an engaging and transparent tournament experience for all participants
+and spectators.
 
+   Beyond tournament management, CueSportsPro delivers comprehensive player profiles with detailed match histories, 
+win/loss statistics, and performance analytics across different rule sets. The platform maintains an archive of past 
+tournaments with complete results and winner information for historical reference. Users can customize notification 
+preferences to stay informed about tournament registrations, and upcoming matches. The elegant user interface, 
+featuring subtle animations, textured backgrounds, and carefully crafted typography, ensures an intuitive and visually 
+appealing experience across all devices.
 
-### Deliverables
+**Additional instructions for CueSportsPro**
+-
+1. To login, click the sign-in button in the upper right corner and then click on Sign In With Google when redirected
+2. Make sure you have a Google account when testing player and tournament official functionality or you cannot login
+3. Only tournament-officials have access to functions like creating tournaments which is not given by default. We can elevate your account to tournament official status for your testing if you ask prior.
+4. Only tournament-officials that are officiating a given tournament are able to enter results for that given tournament so make sure that you are set to officiate a tournament if you want to set scores.
 
+**Technology Stack**
+-
+- Glitch - We deployed to Glitch to make it readily accessible to anyone with the url
+- Tailwind CSS - We used Tailwind CSS to streamline the appearance of our application making it look more professional
+- MongoDB - We used MongoDB to store complex datastructures like the user and tournament information allowing for access control based on the user's role
+- Google OAuth - We used Google authentication as we deemed most people would have a Google account and it allowed for access control on our application
+- Jira - We used Jira to manage our sprint and organize our team throughout the development of this application
+- GitHub - We used GitHub to manage version control throughout development and manage merge conflicts
+- Nodemailer + smtp - We used Nodemailer to send notifications to users when tournaments are created and started
 
-#### Turning in Your Project
-Push the final version of your term project to the GitHub repo you accepted for the assignment. 
+**Challenges**
+-
+- Deployment: Deploying on Glitch was a long and painful process
+- Email Notifications: Email notification system to message people when tournaments are created or started
+- Bracket Creation: Dynamic Bracket Generation for any amount of players between 4 and 32.
+- Authentication: Setting up Google OAuth to allow for verification through Google
 
-Deploy your app, in the form of a webpage, to Glitch, Vercel, AWS, Heroku or some other service; it is critical that the application functions correctly wherever you post it.
+**Contributions**
+-
+**Christopher Smith:**
+- Notification feature using Nodemailer and SMTP
+  - Emailing for when a tournament is created
+  - Emailing for when a tournament is started
+- Tournament Creation
+  - Updating Schema
+  - Adding additional fields
+- Implement Reject Player Feature
+  - Removing a player from a Tournament as a TO
+- Bug Fixes
 
-The README for your submitted repo should include
+**Devin Mihaichuk:**
+- Jira Management
+  - Scrum Master
+  - Sprint Management
+- Updated ongoing tournament management
+  - Added a bye system
+  - Added a scoring system
+- Registration for upcoming tournaments
+  - Tournament Officials being able to register or officiate (but not both)
+  - Players able to Register
+  - Viewers only able to view participants
+- Managing player and tournament official access
+- Updated meta data
+- QA Testing
+- Bug Fixes
 
-1. A brief description of what you created, and a link to the project itself (two paragraphs of text)
-2. Any additional instructions that might be needed to fully use your project (login information etc.)
-3. An outline of the technologies you used and how you used them.
-4. What challenges you faced in completing the project.
-5. What each group member was responsible for designing / developing.
-6. A link to your project video.
+**Emre Sunar:**
+- Tournament Bracket
+  - Created schema
+  - Created styling
+  - Bracket generation
+  - Limiting access to bracket management
+- Tournament Creation
+  - Updating the database
+  - Schema
+- Bug Fixes
 
-Think of 1,3, and 4 in particular in a similar vein to the design / tech achievements for A1—A4… make a case for why what you did was challenging and why your implementation deserves a grade of 100%.
-
-## FAQs
-
-- **Can I use XYZ framework?** You can use any web-based frameworks or tools available, but for your server programming you need to use Node.js. Your client-side scripting language should be either JavaScript or TypeScript. While the course staff is happy to help with frameworks used in the class, we can't guarantee we'll be able to assist you with other frameworks / databases; choose carefully!
+**Danial Zhang:**
+- Authentication through Google
+  - Automatically registering new people into the database as players
+  - Creating method to retrieve user information
+- Profile
+  - Customization of username, bio, country, and profile picture
+  - Player statistics
+    - Diagrams and tables
+    - Including a filter feature
+  - Updating and Displaying player match history
+- Settings
+  - Allowing users to enable/disable emails
+- **Bug Fixes**
+  - Created Dev Tool for debugging and testing (now deleted)
