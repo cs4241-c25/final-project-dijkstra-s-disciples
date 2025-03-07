@@ -84,7 +84,7 @@ appealing experience across all devices.
 - Drafted First Iteration of Website 
   - Created Logo, as well as header, footer, and nav bar
   - Added a parallax image to the front home page under the tournaments for visual effect
-  - Created styling for entire website with texture overlay and color palette, with custom animations for certain functionalities
+  - Created styling for entire website with texture overlay and color palette, with custom animations
 - Tournament Bracket
   - Created dynamically generating schema with series of arrays which define rounds in a tournament
   - Created styling
